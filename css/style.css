@@ -19,8 +19,15 @@ body{
 
 header{
     grid-area: header;
+    background-image:  url(../assets/images/Cabecera.png);
+    background-repeat: no-repeat;
+}
+
+
+nav {
     background-image: url(../assets/images/Cabecera.png);
     background-repeat: no-repeat;
+    
 }
 
 a img{
