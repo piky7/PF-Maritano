@@ -17,17 +17,10 @@ body{
     row-gap: 15px;
 }
 
-header{
-    grid-area: header;
-    background-image:  url(../assets/images/Cabecera.png);
-    background-repeat: no-repeat;
-}
-
 
 nav {
-    background-image: url(../assets/images/Cabecera.png);
-    background-repeat: no-repeat;
-    
+    background-image: url(../assets/images/Cabecera\ 2.png);
+    background-size: cover;
 }
 
 a img{
@@ -71,7 +64,7 @@ aside table , main table{
 
 aside h1 , article  h1{
     background-color: rgb(0, 0, 0);
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     border: 2px solid orangered;
     padding: 5px;
     color: aliceblue;
@@ -137,7 +130,6 @@ aside table tr , main table tr{
 
 .lado2 h1{
     text-align: center;
-    font-size: 2rem;
 }
 
 .lado3{
@@ -200,20 +192,33 @@ footer {
 @media (max-width:600px) {
 
 
-
     main{
     grid-area: main;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr;
     grid-template-areas:  
-     "lado1" 
+     "lado3" 
      "lado2" 
-     "lado3"
+     "lado1"
     ;
     column-gap: 15px;
+    row-gap: 15px;
     margin-left: 15px;
     margin-right: 15px;
 }
+
+.lado2 table tr th{
+    text-align: start;
+    font-size: 0.8rem;
+    background-color: black;
+}
+
+.lado1 table tr th{
+    text-align: start;
+    font-size: 1.3rem;
+    background-color: black;
+}
+
 }
 
