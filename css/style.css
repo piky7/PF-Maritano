@@ -210,14 +210,21 @@ footer {
 
 .lado2 table tr th{
     text-align: start;
-    font-size: 0.8rem;
-    background-color: black;
+    font-size: 0.9rem;
+
+}
+
+.lado2 table tr td{
+    text-align: start;
+    font-size: 0.7rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .lado1 table tr th{
     text-align: start;
-    font-size: 1.3rem;
-    background-color: black;
+    font-size: 0.9rem;
+
 }
 
 }
