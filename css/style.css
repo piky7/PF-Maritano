@@ -196,3 +196,24 @@ footer {
     font-size: 1.2rem;
 }
 
+
+@media (max-width:600px) {
+
+
+
+    main{
+    grid-area: main;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas:  
+     "lado1" 
+     "lado2" 
+     "lado3"
+    ;
+    column-gap: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+}
+
