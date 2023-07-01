@@ -36,6 +36,7 @@ a img{
 main{
     grid-area: main;
     display: grid;
+    height: 70vh;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 3fr 1fr;
     grid-template-areas:  
@@ -51,6 +52,12 @@ main{
     border: 2px solid black;
     grid-area: lado1;
     text-align: center;
+    overflow: auto
+}
+
+.lado1 table tr th{
+    text-align: start;
+   
 }
 
 aside table , main table{
@@ -58,6 +65,7 @@ aside table , main table{
     margin:7px auto;
     color:white;
     text-align:center;
+   
 }
 
 
@@ -93,6 +101,8 @@ aside table tr , main table tr{
 .lado2 table tr td{
     font-size: 1rem;
     font-weight: bold;
+    padding-top: 7px;
+    padding-bottom: 7px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -119,6 +129,8 @@ aside table tr , main table tr{
 
 .par td, .impar td{
    text-align: start;
+   padding-top: 3px;
+    padding-bottom: 3px;
 }
 
 
@@ -126,6 +138,7 @@ aside table tr , main table tr{
     background-color: rgb(151, 140, 140);
     border: 2px solid black;
     grid-area: lado2;
+    overflow: auto
 }
 
 .lado2 h1{
@@ -195,6 +208,7 @@ footer {
     main{
     grid-area: main;
     display: grid;
+    height: auto;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr;
     grid-template-areas:  
@@ -217,14 +231,11 @@ footer {
 .lado2 table tr td{
     text-align: start;
     font-size: 0.7rem;
-    padding-top: 10px;
-    padding-bottom: 10px;
 }
 
 .lado1 table tr th{
     text-align: start;
     font-size: 0.9rem;
-
 }
 
 }
