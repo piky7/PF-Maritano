@@ -231,6 +231,8 @@ footer {
 .lado2 table tr td{
     text-align: start;
     font-size: 0.7rem;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .lado1 table tr th{
