@@ -60,6 +60,11 @@ main{
    
 }
 
+.lado1 table tr td{
+    padding-right: 3px;
+    padding-left: 3px;
+}
+
 aside table , main table{
     width:95%;
     margin:7px auto;
@@ -130,8 +135,11 @@ aside table tr , main table tr{
 .par td, .impar td{
    text-align: start;
    padding-top: 3px;
-    padding-bottom: 3px;
+   padding-bottom: 3px;
+
 }
+
+
 
 
 .lado2{
