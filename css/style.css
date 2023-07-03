@@ -99,6 +99,18 @@ aside table tr , main table tr{
     cursor: pointer;
 }
 
+.lado2{
+    background-color: rgb(151, 140, 140);
+    border: 2px solid black;
+    grid-area: lado2;
+    overflow-x: hidden;
+    
+}
+
+.lado2 h1{
+    text-align: center;
+}
+
 .lado2 table tr th{
     text-align: start;
     font-size: 1.3rem;
@@ -134,6 +146,7 @@ aside table tr , main table tr{
     color: rgb(17, 17, 17);
 }
 
+
 .par td, .impar td{
    text-align: start;
    padding-top: 3px;
@@ -144,17 +157,6 @@ aside table tr , main table tr{
 
 
 
-.lado2{
-    background-color: rgb(151, 140, 140);
-    border: 2px solid black;
-    grid-area: lado2;
-    overflow-x: hidden;
-    
-}
-
-.lado2 h1{
-    text-align: center;
-}
 
 .lado3{
     background-color: rgb(151, 140, 140);
@@ -177,6 +179,8 @@ figcaption{
     justify-content: center;
     border-radius: 30px;
 }
+
+
 
 footer {
     display: flex;
