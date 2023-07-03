@@ -38,13 +38,13 @@ main{
     display: grid;
     height: 70vh;
     grid-template-rows: 1fr;
-    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-columns: 1fr 3.2fr 1fr;
     grid-template-areas:  
      "lado1 lado2 lado3"
     ;
     column-gap: 15px;
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: 8px;
+    margin-right: 8px;
 }
 
 .lado1{
@@ -55,14 +55,16 @@ main{
     overflow: auto
 }
 
-.lado1 table tr th{
+.lado1 table tr th , .lado3 table tr th{
     text-align: start;
    
 }
 
-.lado1 table tr td{
+.lado1 table tr td , .lado3 table tr td{
+    font-size: 0.9rem;
     padding-right: 3px;
     padding-left: 3px;
+    font-weight: bold;
 }
 
 aside table , main table{
@@ -77,7 +79,7 @@ aside table , main table{
 
 aside h1 , article  h1{
     background-color: rgb(0, 0, 0);
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     border: 2px solid orangered;
     padding: 5px;
     color: aliceblue;
@@ -146,7 +148,8 @@ aside table tr , main table tr{
     background-color: rgb(151, 140, 140);
     border: 2px solid black;
     grid-area: lado2;
-    overflow: auto
+    overflow-x: hidden;
+    
 }
 
 .lado2 h1{
@@ -157,6 +160,7 @@ aside table tr , main table tr{
     background-color: rgb(151, 140, 140);
     border: 2px solid black;
     grid-area: lado3;
+    overflow: auto
 }
 
 figcaption{
@@ -217,12 +221,12 @@ footer {
     grid-area: main;
     display: grid;
     height: auto;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
     grid-template-columns: 1fr;
     grid-template-areas:  
-     "lado3" 
      "lado2" 
-     "lado1"
+     "lado1" 
+     "lado3"
     ;
     column-gap: 15px;
     row-gap: 15px;
@@ -230,23 +234,49 @@ footer {
     margin-right: 15px;
 }
 
-.lado2 table tr th{
+.posicionesN{
+  grid-area:lado3 ;
+}
+
+.noticiasN{
+    grid-area: lado1 ;
+}
+
+.miniNoticiasN{
+    grid-area: lado2;
+}
+
+.asistencias{
+ grid-area: lado2;
+}
+
+.posiciones{
+ grid-area: lado1;
+}
+
+.goleadores{
+ grid-area: lado3;
+}
+
+
+.lado2 table tr th , .lado1 table tr th , .lado3 table tr th{
     text-align: start;
     font-size: 0.9rem;
 
 }
 
-.lado2 table tr td{
+.lado2 table tr td , .lado3 table tr td{
     text-align: start;
-    font-size: 0.7rem;
+    font-size: 1rem;
     padding-left: 5px;
     padding-right: 5px;
 }
 
-.lado1 table tr th{
-    text-align: start;
-    font-size: 0.9rem;
-}
+
+
+
+
+
 
 }
 
