@@ -16,6 +16,8 @@
 
     }
 
+
+
 .posicionesN {
 	grid-area: lado3 ;
 }
@@ -40,13 +42,22 @@
 }
 .lado2 table tr th, .lado1 table tr th, .lado3 table tr th {
 	text-align: start;
-	font-size: 0.9rem;
+	font-size: 1rem;
+  
+    
 }
 .lado2 table tr td, .lado3 table tr td {
 	text-align: start;
 	font-size: 1rem;
-	padding-left: 5px;
-	padding-right: 5px;
+    
+	padding-left: 1px;
+	padding-right: 1px;
 }
+
+ .centrarTabla table tr td , .centrarTabla table tr th{
+    width: 33%;
+    text-align: center;
+}
+
 
 }
