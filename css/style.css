@@ -1,286 +1,230 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    height: 100vh;
-    background-color: #212529;
-    display: grid;
-    grid-template-rows: 1fr 4fr 0.8fr;
-    grid-template-columns: 1fr;
-    grid-template-areas: 
-     "header"
-     "main"
-     "footer"
-    ;
-    row-gap: 15px;
+body {
+  height: 100vh;
+  background-color: #212529;
+  display: grid;
+  grid-template-rows: 1fr 4fr 0.8fr;
+  grid-template-columns: 1fr;
+  grid-template-areas: "header" "main" "footer";
+  row-gap: 15px;
 }
-
 
 nav {
-    background-image: url(../assets/images/Cabecera\ 2.png);
-    background-size: cover;
+  background-image: url(../assets/images/Cabecera\ 2.png);
+  background-size: cover;
+}
+nav a img {
+  width: 110px;
+}
+nav .escudoAncho img {
+  width: 170px;
 }
 
-a img{
-    width: 110px;
+main {
+  grid-area: main;
+  display: grid;
+  height: 70vh;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 3.2fr 1fr;
+  grid-template-areas: "lado1 lado2 lado3";
+  column-gap: 15px;
+  margin-left: 8px;
+  margin-right: 8px;
 }
 
-
-.escudoAncho img{
-    width: 170px;
+.lado1 {
+  background-color: rgb(151, 140, 140);
+  border: 2px solid black;
+  grid-area: lado1;
+  text-align: center;
+  overflow: auto;
 }
 
-
-main{
-    grid-area: main;
-    display: grid;
-    height: 70vh;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 3.2fr 1fr;
-    grid-template-areas:  
-     "lado1 lado2 lado3"
-    ;
-    column-gap: 15px;
-    margin-left: 8px;
-    margin-right: 8px;
+.lado1 table tr th, .lado3 table tr th {
+  text-align: start;
 }
 
-.lado1{
-    background-color: rgb(151, 140, 140);
-    border: 2px solid black;
-    grid-area: lado1;
-    text-align: center;
-    overflow: auto
+.lado1 table tr td, .lado3 table tr td {
+  font-size: 0.9rem;
+  padding-right: 3px;
+  padding-left: 3px;
+  font-weight: bold;
 }
 
-.lado1 table tr th , .lado3 table tr th{
-    text-align: start;
-   
+aside table, main table {
+  width: 95%;
+  margin: 7px auto;
+  color: white;
+  text-align: center;
+}
+aside table img, main table img {
+  width: 30px;
+  height: 30px;
+}
+aside table tr, main table tr {
+  cursor: pointer;
 }
 
-.lado1 table tr td , .lado3 table tr td{
-    font-size: 0.9rem;
-    padding-right: 3px;
-    padding-left: 3px;
-    font-weight: bold;
+aside h1, article h1 {
+  background-color: rgb(0, 0, 0);
+  font-size: 1.5rem;
+  border: 2px solid orangered;
+  padding: 5px;
+  color: aliceblue;
+  text-align: center;
 }
 
-aside table , main table{
-    width:95%;
-    margin:7px auto;
-    color:white;
-    text-align:center;
-   
+a {
+  text-decoration: none;
 }
 
-
-
-aside h1 , article  h1{
-    background-color: rgb(0, 0, 0);
-    font-size: 1.5rem;
-    border: 2px solid orangered;
-    padding: 5px;
-    color: aliceblue;
-    text-align: center;
+.lado2 {
+  background-color: rgb(151, 140, 140);
+  border: 2px solid black;
+  grid-area: lado2;
+  overflow-x: hidden;
+}
+.lado2 h1 {
+  text-align: center;
+}
+.lado2 table tr th {
+  text-align: start;
+  font-size: 1.3rem;
+  background-color: black;
+}
+.lado2 table tr td {
+  font-size: 1rem;
+  font-weight: bold;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
-a{
-    text-decoration:none;
+.par:hover, .impar:hover {
+  color: black;
+  background-color: coral;
 }
 
-aside table img , main table img{
-    width: 30px;
-    height: 30px;
+.destacado {
+  font-family: Arial;
+  font-weight: bold;
+  background-color: rgb(0, 0, 0);
 }
 
-aside table tr , main table tr{
-    cursor: pointer;
+.par {
+  background-color: rgb(17, 17, 17);
 }
 
-.lado2{
-    background-color: rgb(151, 140, 140);
-    border: 2px solid black;
-    grid-area: lado2;
-    overflow-x: hidden;
-    
+.impar {
+  background-color: darkgrey;
+  color: rgb(17, 17, 17);
 }
 
-.lado2 h1{
-    text-align: center;
+.par td, .impar td {
+  text-align: start;
+  padding-top: 3px;
+  padding-bottom: 3px;
 }
 
-.lado2 table tr th{
-    text-align: start;
-    font-size: 1.3rem;
-    background-color: black;
+.lado3 {
+  background-color: rgb(151, 140, 140);
+  border: 2px solid black;
+  grid-area: lado3;
+  overflow: auto;
 }
 
-.lado2 table tr td{
-    font-size: 1rem;
-    font-weight: bold;
-    padding-top: 7px;
-    padding-bottom: 7px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+figcaption {
+  background-color: #222;
+  color: #fff;
+  font: italic smaller sans-serif;
+  padding: 3px;
+  text-align: center;
 }
 
-
-.par:hover,.impar:hover{
-    color: black;
-    background-color: coral;
+.logoLiga {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  border-radius: 30px;
 }
 
-.destacado{
-    font-family:Arial;
-    font-weight:bold;
-    background-color: rgb(0, 0, 0);
+#form {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px;
 }
-
-.par{
-    background-color: rgb(17, 17, 17);
+#form label {
+  font-size: 1.2rem;
 }
-
-.impar{
-    background-color: darkgrey;
-    color: rgb(17, 17, 17);
-}
-
-
-.par td, .impar td{
-   text-align: start;
-   padding-top: 3px;
-   padding-bottom: 3px;
-
-}
-
-
-
-
-
-.lado3{
-    background-color: rgb(151, 140, 140);
-    border: 2px solid black;
-    grid-area: lado3;
-    overflow: auto
-}
-
-figcaption{
-    background-color: #222;
-    color: #fff;
-    font: italic smaller sans-serif;
-    padding: 3px;
-    text-align: center;
-}
-
-.logoLiga{
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    border-radius: 30px;
-}
-
-
 
 footer {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
-.redes{
-    background-color: rgba(224, 71, 0, 0.829);
-    flex-basis: 70%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.redes {
+  background-color: rgba(224, 71, 0, 0.829);
+  flex-basis: 70%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.redes a img {
+  height: 30px;
+  width: 30px;
 }
 
-.redes a img{
-    height: 30px;
-    width: 30px;
-}
-
-
-/* contacto */
-
-#form{
-    height: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    margin: 20px;
-    
-}
-
-#form label{
-    font-size: 1.2rem;
-}
-
-
-@media (max-width:600px) {
-
-
-    main{
+@media (max-width: 600px) {
+  main {
     grid-area: main;
     display: grid;
     height: auto;
-    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-rows: 0.5fr 1.5fr 0.5fr;
     grid-template-columns: 1fr;
-    grid-template-areas:  
-     "lado2" 
-     "lado1" 
-     "lado3"
-    ;
+    grid-template-areas: "lado2" "lado1" "lado3";
     column-gap: 15px;
-    row-gap: 15px;
+    row-gap: 20px;
     margin-left: 15px;
     margin-right: 15px;
-}
-
-.posicionesN{
-  grid-area:lado3 ;
-}
-
-.noticiasN{
-    grid-area: lado1 ;
-}
-
-.miniNoticiasN{
+  }
+  .posicionesN {
+    grid-area: lado3;
+  }
+  .noticiasN {
+    grid-area: lado1;
+  }
+  .miniNoticiasN {
     grid-area: lado2;
-}
-
-.asistencias{
- grid-area: lado2;
-}
-
-.posiciones{
- grid-area: lado1;
-}
-
-.goleadores{
- grid-area: lado3;
-}
-
-
-.lado2 table tr th , .lado1 table tr th , .lado3 table tr th{
+  }
+  .asistencias {
+    grid-area: lado2;
+  }
+  .posiciones {
+    grid-area: lado1;
+  }
+  .goleadores {
+    grid-area: lado3;
+  }
+  .lado2, .lado1, .lado3 {
+    height: max-content;
+  }
+  .lado2 table tr th, .lado1 table tr th, .lado3 table tr th {
     text-align: start;
     font-size: 0.9rem;
-
-}
-
-.lado2 table tr td , .lado3 table tr td{
+  }
+  .lado2 table tr td, .lado3 table tr td {
     text-align: start;
     font-size: 1rem;
     padding-left: 5px;
     padding-right: 5px;
+  }
 }
 
-
-
-
-
-
-
-}
-
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,15 @@
+footer {
+	display: flex;
+	justify-content: center;
+}
+.redes {
+	background-color: $colorNaranja;
+	flex-basis: 70%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	a img {
+		height: 30px;
+		width: 30px;
+	}
+}
