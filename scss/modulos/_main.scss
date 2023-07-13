@@ -115,6 +115,12 @@ figcaption {
 	border-radius: 30px;
 }
 
+.centrarTabla table tr td , .centrarTabla table tr th{
+	width: 33%;
+	text-align: center;
+  }
+
+
 // Formulario
 
 #form {
