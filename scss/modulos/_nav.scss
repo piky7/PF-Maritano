@@ -4,7 +4,12 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 background-attachment: fixed;
 background-size: cover;
 
-
+  .dropdown-menu{
+	height: 200px;
+	width: max-content;
+	overflow-y: scroll;
+	overflow-x: hidden;
+  }
 	a img {
 		&:hover{
 			transform: scale(0.97);
