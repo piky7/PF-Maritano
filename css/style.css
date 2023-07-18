@@ -25,8 +25,14 @@ nav {
 nav a img {
   width: 110px;
 }
+nav a img:hover {
+  transform: scale(0.97);
+}
 nav .escudoAncho img {
   width: 170px;
+}
+nav ul li a:hover {
+  transform: scale(1.1);
 }
 
 main {
@@ -48,6 +54,9 @@ main {
   text-align: center;
   overflow: auto;
 }
+.lado1 a h1:hover {
+  transform: scale(0.97);
+}
 
 .lado1 table tr th, .lado3 table tr th {
   text-align: start;
@@ -64,7 +73,6 @@ aside table, main table {
   width: 95%;
   margin: 7px auto;
   color: white;
-  text-align: center;
 }
 aside table img, main table img {
   width: 30px;
@@ -97,7 +105,6 @@ a {
   text-align: center;
 }
 .lado2 table tr th {
-  text-align: start;
   font-size: 1.3rem;
   background-color: black;
 }
@@ -109,9 +116,20 @@ a {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
+.centrarTabla table tr th {
+  width: 33%;
+  text-align: center;
+}
+
+.centrarTabla table tr td {
+  width: 33%;
+  text-align: center;
+}
+
 .par:hover, .impar:hover {
   color: black;
   background-color: coral;
+  transform: scale(0.99);
 }
 
 .destacado {
@@ -141,6 +159,9 @@ a {
   grid-area: lado3;
   overflow: auto;
 }
+.lado3 a h1:hover {
+  transform: scale(0.97);
+}
 
 figcaption {
   background-color: #222;
@@ -157,21 +178,60 @@ figcaption {
   border-radius: 30px;
 }
 
-.centrarTabla table tr td, .centrarTabla table tr th {
-  width: 33%;
-  text-align: center;
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0.25rem;
+  margin: 2rem 0;
+}
+form .content {
+  height: 5rem;
+}
+form input {
+  margin: 0 0.75rem;
+  appearance: none;
+  border: none;
+  width: 15rem;
+  height: 2rem;
+  font-size: 1.25rem;
+  font-family: "Times New Roman", Times, serif;
+  background-color: #f6f6f6;
+  border-bottom: 2px solid #4b556b;
+  transition: 0.3s ease;
+}
+form input:hover {
+  font-size: 1.75rem;
+}
+form input:focus-visible {
+  height: 1.75rem;
+  height: 3rem;
+  border: none;
+  background-color: #fff;
+}
+form button {
+  appearance: none;
+  background: linear-gradient(to left, rgb(19, 87, 19), rgb(19, 128, 19), rgb(20, 184, 20));
+  font-size: 1.5rem;
+  border: none;
+  width: 10rem;
+  height: 3rem;
+  margin: 0 1rem;
+  color: #f6f6f6;
+  transition: 0.3s ease;
+}
+form button:hover {
+  border-radius: 0.5rem;
+  box-shadow: 4px 4px 10px #4b556b;
+}
+form .reset {
+  background: linear-gradient(to right, rgb(89, 141, 236) 60%, rgb(173, 202, 255));
 }
 
-#form {
-  height: 80%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  margin: 20px;
-}
-#form label {
-  font-size: 1.2rem;
+.formulario {
+  width: 60rem;
+  height: 25rem;
+  margin: 5rem auto;
+  border-radius: 1rem;
 }
 
 footer {
@@ -238,6 +298,24 @@ footer {
   .centrarTabla table tr td, .centrarTabla table tr th {
     width: 33%;
     text-align: center;
+  }
+  div.formulario {
+    width: 20rem;
+    height: 36rem;
+  }
+  form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+    margin: 1rem 0;
+  }
+  input {
+    width: 18rem;
+    height: 1.5rem;
+  }
+  .btn-contacto {
+    width: 18rem;
+    height: 4rem;
   }
 }
 

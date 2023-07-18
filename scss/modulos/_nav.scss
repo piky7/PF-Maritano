@@ -4,9 +4,22 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 background-attachment: fixed;
 background-size: cover;
 	a img {
+		&:hover{
+			transform: scale(0.97);
+		}
 		width: 110px;
 	}
 	.escudoAncho img {
 		width: 170px;
+	}
+	ul{
+		li{
+			a{
+				&:hover{
+					transform: scale(1.1);
+				}
+				
+			}
+		}
 	}
 }
