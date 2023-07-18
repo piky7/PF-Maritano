@@ -1,4 +1,4 @@
-@media (max-width:600px) {
+@media (max-width:1023px) { // vista tablet y celular
     main{
         grid-area: main;
         display: grid;
@@ -88,6 +88,4 @@ input{
     width: 18rem;
     height: 4rem;
 }
-
-
 }
