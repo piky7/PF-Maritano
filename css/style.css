@@ -125,6 +125,7 @@ footer {
   }
   .centrarTabla table tr td, .centrarTabla table tr th {
     width: 33%;
+    height: max-content;
     text-align: center;
   }
   div.formulario {
@@ -247,6 +248,7 @@ aside h1, article h1 {
 
 .centrarTabla table tr th {
   width: 33%;
+  height: max-content;
   text-align: center;
 }
 
@@ -267,6 +269,20 @@ aside h1, article h1 {
   transform: scale(0.99);
 }
 
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  main .centrarTabla table tr th {
+    width: 33%;
+    height: max-content;
+    text-align: center;
+    font-size: 0.8rem;
+  }
+  main .centrarTabla table tr td {
+    width: 33%;
+    height: max-content;
+    text-align: center;
+    font-size: 0.8rem;
+  }
+}
 .formulario {
   width: 60rem;
   height: 25rem;
