@@ -3,9 +3,10 @@
         grid-area: main;
         display: grid;
         height: auto;
-        grid-template-rows: 0.5fr 1.5fr 0.5fr;
+        grid-template-rows: 0.5fr 0.5fr 0.5fr;
         grid-template-columns: 1fr;
-        grid-template-areas: "lado2" 
+        grid-template-areas: 
+         "lado2" 
          "lado1" 
          "lado3"
         ;
@@ -15,6 +16,8 @@
         margin-right: 15px;
 
     }
+
+  
 
 nav{
     ul{
@@ -28,6 +31,8 @@ nav{
 		}
 	}
 }
+
+// Cambio de nombre de area para reordenar en vista tablet y celular
 
 .posicionesN {
 	grid-area: lado3 ;
@@ -47,6 +52,17 @@ nav{
 .goleadores {
 	grid-area: lado3;
 }
+
+.noticiasN{
+    .contenedor-padre-noticias{
+        .carta-contenedor{
+            height:max-content
+        }
+    }
+}
+
+
+// Optimizar largo de tablas
 
 .lado2 , .lado1 , .lado3{
     height: max-content;
@@ -72,20 +88,19 @@ nav{
 
 div.formulario{
     width: 20rem;
-    height: 36rem;
-}
-form{
-    display: grid;
-    grid-template-columns: 1fr ;
-    grid-gap: 0;
-    margin: 1rem 0;
-}
-input{
-    width: 18rem;
-    height: 1.5rem;
-}
-.btn-contacto{
-    width: 18rem;
-    height: 4rem;
+    form{
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-gap: 0;
+        margin: 1rem 0;
+    }
+    input{
+        width: 18rem;
+        height: 1.5rem;
+    }
+    .btn-contacto{
+        width: 18rem;
+        height: 4rem;
+    }
 }
 }

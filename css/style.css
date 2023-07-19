@@ -52,192 +52,8 @@ main {
   margin-left: 8px;
   margin-right: 8px;
 }
-
-.lado1 {
-  background-color: rgb(151, 140, 140);
-  border: 2px solid black;
-  grid-area: lado1;
-  text-align: center;
-  overflow: auto;
-}
-.lado1 a h1:hover {
-  transform: scale(0.97);
-}
-
-.lado1 table tr th, .lado3 table tr th {
-  text-align: start;
-}
-
-.lado1 table tr td, .lado3 table tr td {
-  font-size: 1rem;
-  padding-right: 3px;
-  padding-left: 3px;
-  font-weight: bold;
-}
-
-aside table, main table {
-  width: 95%;
-  margin: 7px auto;
-  color: white;
-}
-aside table img, main table img {
-  width: 30px;
-  height: 30px;
-}
-aside table tr, main table tr {
-  cursor: pointer;
-}
-
-aside h1, article h1 {
-  background-color: rgb(0, 0, 0);
-  font-size: 1.5rem;
-  border: 2px solid orangered;
-  padding: 5px;
-  color: aliceblue;
-  text-align: center;
-}
-
-a {
+main a {
   text-decoration: none;
-}
-
-.lado2 {
-  background-color: rgb(151, 140, 140);
-  border: 2px solid black;
-  grid-area: lado2;
-  overflow-x: hidden;
-}
-.lado2 h1 {
-  text-align: center;
-}
-.lado2 table tr th {
-  font-size: 1.3rem;
-  background-color: black;
-}
-.lado2 table tr td {
-  font-size: 1rem;
-  font-weight: bold;
-  padding-top: 7px;
-  padding-bottom: 7px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-}
-
-.centrarTabla table tr th {
-  width: 33%;
-  text-align: center;
-}
-
-.centrarTabla table tr td {
-  width: 33%;
-  text-align: center;
-}
-
-.par:hover, .impar:hover {
-  color: black;
-  background-color: coral;
-  transform: scale(0.99);
-}
-
-.destacado {
-  font-family: Arial;
-  font-weight: bold;
-  background-color: rgb(0, 0, 0);
-}
-
-.par {
-  background-color: rgb(17, 17, 17);
-}
-
-.impar {
-  background-color: darkgrey;
-  color: rgb(17, 17, 17);
-}
-
-.par td, .impar td {
-  text-align: start;
-  padding-top: 3px;
-  padding-bottom: 3px;
-}
-
-.lado3 {
-  background-color: rgb(151, 140, 140);
-  border: 2px solid black;
-  grid-area: lado3;
-  overflow: auto;
-}
-.lado3 a h1:hover {
-  transform: scale(0.97);
-}
-
-figcaption {
-  background-color: #222;
-  color: #fff;
-  font: italic smaller sans-serif;
-  padding: 3px;
-  text-align: center;
-}
-
-.logoLiga {
-  background-color: black;
-  display: flex;
-  justify-content: center;
-  border-radius: 30px;
-}
-
-form {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 0.25rem;
-  margin: 2rem 0;
-}
-form .content {
-  height: 5rem;
-}
-form input {
-  margin: 0 0.75rem;
-  appearance: none;
-  border: none;
-  width: 15rem;
-  height: 2rem;
-  font-size: 1.25rem;
-  font-family: "Times New Roman", Times, serif;
-  background-color: #f6f6f6;
-  border-bottom: 2px solid #4b556b;
-  transition: 0.3s ease;
-}
-form input:hover {
-  font-size: 1.75rem;
-}
-form input:focus-visible {
-  height: 1.75rem;
-  height: 3rem;
-  border: none;
-  background-color: #fff;
-}
-form button {
-  appearance: none;
-  background: linear-gradient(to left, rgb(19, 87, 19), rgb(19, 128, 19), rgb(20, 184, 20));
-  font-size: 1.5rem;
-  border: none;
-  width: 10rem;
-  height: 3rem;
-  margin: 0 1rem;
-  color: #f6f6f6;
-  transition: 0.3s ease;
-}
-form button:hover {
-  border-radius: 0.5rem;
-  box-shadow: 4px 4px 10px #4b556b;
-}
-form .reset {
-  background: linear-gradient(to right, rgb(89, 141, 236) 60%, rgb(173, 202, 255));
-}
-
-.formulario {
-  width: 60rem;
-  height: 25rem;
-  margin: 5rem auto;
-  border-radius: 1rem;
 }
 
 footer {
@@ -262,7 +78,7 @@ footer {
     grid-area: main;
     display: grid;
     height: auto;
-    grid-template-rows: 0.5fr 1.5fr 0.5fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr;
     grid-template-columns: 1fr;
     grid-template-areas: "lado2" "lado1" "lado3";
     column-gap: 15px;
@@ -291,6 +107,9 @@ footer {
   .goleadores {
     grid-area: lado3;
   }
+  .noticiasN .contenedor-padre-noticias .carta-contenedor {
+    height: max-content;
+  }
   .lado2, .lado1, .lado3 {
     height: max-content;
   }
@@ -310,22 +129,215 @@ footer {
   }
   div.formulario {
     width: 20rem;
-    height: 36rem;
   }
-  form {
+  div.formulario form {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 0;
     margin: 1rem 0;
   }
-  input {
+  div.formulario input {
     width: 18rem;
     height: 1.5rem;
   }
-  .btn-contacto {
+  div.formulario .btn-contacto {
     width: 18rem;
     height: 4rem;
   }
+}
+aside table, main table {
+  width: 95%;
+  margin: 7px auto;
+  color: white;
+}
+aside table img, main table img {
+  width: 30px;
+  height: 30px;
+}
+aside table tr, main table tr {
+  cursor: pointer;
+}
+aside table .par, main table .par {
+  background-color: rgb(17, 17, 17);
+}
+aside table .impar, main table .impar {
+  background-color: darkgrey;
+  color: rgb(17, 17, 17);
+}
+
+.lado2 {
+  background-color: rgb(151, 140, 140);
+  border: 2px solid black;
+  grid-area: lado2;
+  overflow-x: hidden;
+}
+.lado2 table tr th {
+  font-size: 1.3rem;
+  background-color: black;
+}
+.lado2 table tr td {
+  font-size: 1rem;
+  font-weight: bold;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+.lado1 {
+  background-color: rgb(151, 140, 140);
+  border: 2px solid black;
+  grid-area: lado1;
+  text-align: center;
+  overflow: auto;
+}
+.lado1 a h1:hover {
+  transform: scale(0.97);
+}
+
+.lado3 {
+  background-color: rgb(151, 140, 140);
+  border: 2px solid black;
+  grid-area: lado3;
+  overflow: auto;
+}
+.lado3 a h1:hover {
+  transform: scale(0.97);
+}
+
+.lado1 table tr th, .lado3 table tr th {
+  text-align: start;
+}
+
+.lado1 table tr td, .lado3 table tr td {
+  font-size: 1rem;
+  padding-right: 3px;
+  padding-left: 3px;
+  font-weight: bold;
+}
+
+figcaption {
+  background-color: #222;
+  color: #fff;
+  font: italic smaller sans-serif;
+  padding: 3px;
+  text-align: center;
+}
+
+.logoLiga {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  border-radius: 30px;
+}
+
+aside h1, article h1 {
+  background-color: rgb(0, 0, 0);
+  font-size: 1.5rem;
+  border: 2px solid orangered;
+  padding: 5px;
+  color: aliceblue;
+  text-align: center;
+}
+
+.destacado {
+  font-family: Arial;
+  font-weight: bold;
+  background-color: rgb(0, 0, 0);
+}
+
+.centrarTabla table tr th {
+  width: 33%;
+  text-align: center;
+}
+
+.centrarTabla table tr td {
+  width: 33%;
+  text-align: center;
+}
+
+.par td, .impar td {
+  text-align: start;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.par:hover, .impar:hover {
+  color: black;
+  background-color: coral;
+  transform: scale(0.99);
+}
+
+.formulario {
+  width: 60rem;
+  height: 25rem;
+  margin: 5rem auto;
+  border-radius: 1rem;
+}
+.formulario form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0.25rem;
+  margin: 2rem 0;
+}
+.formulario form .content {
+  height: 5rem;
+}
+.formulario form input {
+  margin: 0 0.75rem;
+  appearance: none;
+  border: none;
+  width: 15rem;
+  height: 2rem;
+  font-size: 1.25rem;
+  font-family: "Times New Roman", Times, serif;
+  background-color: #f6f6f6;
+  border-bottom: 2px solid #4b556b;
+  transition: 0.3s ease;
+}
+.formulario form input:hover {
+  font-size: 1.75rem;
+}
+.formulario form input:focus-visible {
+  height: 1.75rem;
+  height: 3rem;
+  border: none;
+  background-color: #fff;
+}
+.formulario form button {
+  appearance: none;
+  background: linear-gradient(to left, rgb(19, 87, 19), rgb(19, 128, 19), rgb(20, 184, 20));
+  font-size: 1.5rem;
+  border: none;
+  width: 10rem;
+  height: 3rem;
+  margin: 0 1rem;
+  color: #f6f6f6;
+  transition: 0.3s ease;
+}
+.formulario form button:hover {
+  border-radius: 0.5rem;
+  box-shadow: 4px 4px 10px #4b556b;
+}
+.formulario form .reset {
+  background: linear-gradient(to right, rgb(89, 141, 236) 60%, rgb(173, 202, 255));
+}
+
+.noticiasN .contenedor-padre-noticias {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 15px;
+}
+.noticiasN .contenedor-padre-noticias .carta-contenedor {
+  width: 250px;
+}
+.noticiasN .contenedor-padre-noticias .carta-contenedor .card {
+  width: 220px;
+  cursor: default;
+}
+.noticiasN .contenedor-padre-noticias .carta-contenedor .card:hover {
+  transform: scale(1.03);
 }
 
 /*# sourceMappingURL=style.css.map */

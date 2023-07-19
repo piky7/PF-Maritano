@@ -1,0 +1,162 @@
+
+//  Tablas 
+
+aside table, main table {
+	width: 95%;
+	margin: 7px auto;
+	color: white;
+	img {
+		width: 30px;
+		height: 30px;
+	}
+	tr {
+		cursor: pointer;
+	}
+    .par {
+        background-color: rgb(17, 17, 17);
+    }
+    .impar {
+        background-color: darkgrey;
+        color: rgb(17, 17, 17);
+    }
+}
+
+
+// Contenedor tabla central
+.lado2 {
+	background-color: $fondoTablas;
+	border: $bordeTablas;
+	grid-area: lado2;
+	overflow-x: hidden;
+	
+	table tr th {
+		font-size: 1.3rem;
+		background-color: black;
+	}
+	table tr td {
+		
+		font-size: 1rem;
+		font-weight: bold;
+		padding-top: 7px;
+		padding-bottom: 7px;
+		font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	}
+}
+
+
+
+// Contenedor tabla izquierda
+.lado1 {
+	background-color: $fondoTablas;
+	border: $bordeTablas;
+	grid-area: lado1;
+	text-align: center;
+	overflow: auto;
+	a {
+		h1{
+			&:hover{
+				transform: scale(0.97);
+			}
+
+		}
+	}
+}
+
+// Contenedor tabla derecha 
+
+.lado3 {
+	background-color: $fondoTablas;
+	border: $bordeTablas;
+	grid-area: lado3;
+	overflow: auto;
+	a {
+		h1{
+			&:hover{
+				transform: scale(0.97);
+			}
+
+		}
+	}
+}
+
+
+// Titulos tablas izq y derecha
+
+.lado1 table tr th, .lado3 table tr th {
+	text-align: start;
+}
+
+// Datos de las tablas izq y derecha
+
+.lado1 table tr td, .lado3 table tr td {
+	font-size: 1rem;
+	padding-right: 3px;
+	padding-left: 3px;
+	font-weight: bold;
+}
+
+figcaption {
+	background-color: #222;
+	color: #fff;
+	font: italic smaller sans-serif;
+	padding: 3px;
+	text-align: center;
+}
+.logoLiga {
+	background-color: black;
+	display: flex;
+	justify-content: center;
+	border-radius: 30px;
+}
+
+
+
+
+// Titulos tablas principal
+aside h1, article  h1 {
+	background-color: rgb(0, 0, 0);
+	font-size: 1.5rem;
+	border: 2px solid orangered;
+	padding: 5px;
+	color: aliceblue;
+	text-align: center;
+}
+
+// Titulo de cada parte de la tabla
+
+.destacado {
+	font-family: Arial;
+	font-weight: bold;
+	background-color: rgb(0, 0, 0);
+}
+
+
+// Centrado de tablas (.centrarTabla son las centrales) .par .impar (las laterales)
+
+.centrarTabla table tr th{
+	width: 33%;
+	text-align: center;
+}
+
+.centrarTabla table tr td{
+	width: 33%;
+	text-align: center;
+}
+
+
+
+.par td, .impar td {
+	text-align: start;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+
+// Hover
+
+.par:hover, .impar:hover {
+	color: black;
+	background-color: coral;
+	transform: scale(0.99);
+}
+

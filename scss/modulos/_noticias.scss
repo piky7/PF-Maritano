@@ -1,0 +1,23 @@
+.noticiasN{
+    .contenedor-padre-noticias{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:space-around;
+        margin-bottom: 15px;
+        .carta-contenedor{
+            width: 250px;
+            // height:max-content;
+           
+       
+            .card{
+                width: 220px;
+                
+                cursor:default;
+                &:hover{
+                    transform: scale(1.03);
+                }
+            }
+        }
+    }
+}
