@@ -396,11 +396,12 @@ aside h1, article h1 {
   margin-bottom: 15px;
 }
 .body-noticias .noticiasN .contenedor-padre-noticias .carta-contenedor {
-  width: 250px;
+  display: flex;
+  justify-content: space-around;
   height: auto;
 }
 .body-noticias .noticiasN .contenedor-padre-noticias .carta-contenedor .card {
-  width: 220px;
+  width: 300px;
   cursor: default;
 }
 .body-noticias .noticiasN .contenedor-padre-noticias .carta-contenedor .card img {
