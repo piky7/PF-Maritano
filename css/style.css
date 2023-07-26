@@ -55,6 +55,20 @@ main {
 main a {
   text-decoration: none;
 }
+main figure {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+main figure img {
+  height: 190px;
+  border: 2px solid white;
+}
+main figure figcaption {
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 footer {
   display: flex;
@@ -127,6 +141,19 @@ footer {
     width: 33%;
     height: max-content;
     text-align: center;
+  }
+  .galeria figure {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .galeria figure img {
+    border: 2px solid rgb(32, 20, 20);
+  }
+  .galeria figure figcaption {
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   div.formulario {
     width: 20rem;
@@ -229,6 +256,7 @@ figcaption {
   display: flex;
   justify-content: center;
   border-radius: 30px;
+  height: 10%;
 }
 
 aside h1, article h1 {
@@ -338,21 +366,44 @@ aside h1, article h1 {
   background: linear-gradient(to right, rgb(89, 141, 236) 60%, rgb(173, 202, 255));
 }
 
-.noticiasN .contenedor-padre-noticias {
+.body-noticias {
+  height: 200vh;
+  display: grid;
+  grid-template-rows: 0.1fr 1fr 0.1fr;
+  grid-template-columns: 1fr;
+  grid-template-areas: "header" "main" "footer";
+}
+.body-noticias .posicionesN {
+  height: max-content;
+}
+.body-noticias .miniNoticiasN {
+  height: 50%;
+}
+.body-noticias .miniNoticiasN .logoLiga {
+  height: 10%;
+}
+.body-noticias .noticiasN {
+  height: max-content;
+}
+.body-noticias .noticiasN .contenedor-padre-noticias {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
   margin-bottom: 15px;
 }
-.noticiasN .contenedor-padre-noticias .carta-contenedor {
+.body-noticias .noticiasN .contenedor-padre-noticias .carta-contenedor {
   width: 250px;
+  height: auto;
 }
-.noticiasN .contenedor-padre-noticias .carta-contenedor .card {
+.body-noticias .noticiasN .contenedor-padre-noticias .carta-contenedor .card {
   width: 220px;
   cursor: default;
 }
-.noticiasN .contenedor-padre-noticias .carta-contenedor .card:hover {
+.body-noticias .noticiasN .contenedor-padre-noticias .carta-contenedor .card img {
+  height: 150px;
+}
+.body-noticias .noticiasN .contenedor-padre-noticias .carta-contenedor .card:hover {
   transform: scale(1.03);
 }
 

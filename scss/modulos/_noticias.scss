@@ -1,22 +1,54 @@
-.noticiasN{
-    .contenedor-padre-noticias{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content:space-around;
-        margin-bottom: 15px;
-        .carta-contenedor{
-            width: 250px;
-            // height:max-content;
+
+.body-noticias{
+
+    height: 200vh;
+    display: grid;
+	grid-template-rows: 0.1fr 1fr 0.1fr;
+	grid-template-columns: 1fr;
+	grid-template-areas: "header"
+     "main"
+     "footer"
+    ;
+
+   .posicionesN{
+    height: max-content;
+   }
+
+   .miniNoticiasN{
+    height:50%;
+    .logoLiga {
+            height: 10%;
+    }
+   }
+
+   .noticiasN{
+        height: max-content;
+        .contenedor-padre-noticias{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content:space-around;
+            margin-bottom: 15px;
+            
+            
+            .carta-contenedor{
+                width: 250px;
+                height:auto;
+               
            
-       
-            .card{
-                width: 220px;
-                
-                cursor:default;
-                &:hover{
-                    transform: scale(1.03);
+                .card{
+                    img{
+                        height: 150px;
+                    }
+                   
+                    width: 220px;
+                    
+                    cursor:default;
+                    &:hover{
+                        transform: scale(1.03);
+                    }
                 }
+               
             }
         }
     }

@@ -86,6 +86,28 @@ nav{
     text-align: center;
 }
 
+.galeria{
+
+    figure{
+        padding-left: 5px;
+        padding-right: 5px;
+        
+        img{
+            // height: auto;
+            border: 2px solid rgb(32, 20, 20);
+        }
+        figcaption{
+            height: 55px;
+            // text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+}
+
+
 div.formulario{
     width: 20rem;
     form{
