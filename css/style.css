@@ -4,9 +4,6 @@
   grid-template-areas: "header" "main" "main2" "footer";
   row-gap: 25px;
 }
-.bodyEstadisticas main {
-  column-gap: 7px;
-}
 .bodyEstadisticas .main2 {
   grid-area: main2;
   display: grid;
@@ -79,7 +76,7 @@ main {
   display: grid;
   height: 70vh;
   grid-template-rows: 1fr;
-  grid-template-columns: 1fr 3.2fr 1fr;
+  grid-template-columns: 1fr 2fr 1fr;
   grid-template-areas: "lado1 lado2 lado3";
   column-gap: 15px;
   margin-left: 8px;
@@ -150,6 +147,9 @@ footer {
     row-gap: 20px;
     margin-left: 15px;
     margin-right: 15px;
+  }
+  main .asistencias table tr td, main .posiciones table tr td {
+    text-align: start;
   }
   nav ul li a:hover {
     transform: scale(1);
