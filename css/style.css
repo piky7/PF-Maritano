@@ -369,7 +369,7 @@ aside h1, article h1 {
 .body-noticias {
   height: 200vh;
   display: grid;
-  grid-template-rows: 0.1fr 1fr 0.1fr;
+  grid-template-rows: 0.1fr 1fr 0.05fr;
   grid-template-columns: 1fr;
   grid-template-areas: "header" "main" "footer";
 }
