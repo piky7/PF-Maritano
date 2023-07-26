@@ -1,0 +1,50 @@
+.bodyEstadisticas{
+     grid-template-columns: 1fr;
+     grid-template-rows: 1fr 2fr 2fr 1fr;
+    grid-template-areas: "header"
+     "main"
+     "main2"
+     "footer"
+     ;
+     row-gap: 25px;
+
+
+    main{
+        column-gap: 7px;
+    }
+.main2{
+    grid-area: main2;
+	display: grid;
+    
+    
+	 grid-template-rows: 1fr;
+	 grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-areas: 
+    "rebotes robos tapones puntosEquipo"
+    ;
+	column-gap: 15px;
+    row-gap: 50px;
+	margin-left: 8px;
+	margin-right: 8px;
+   
+}
+
+   
+
+        .rebotes{
+            grid-area: rebotes;
+        }
+        .robos{
+            grid-area: robos;
+        }
+
+        .tapones{
+            grid-area: tapones;
+        }
+
+        .puntosEquipo{
+            grid-area: puntosEquipo;
+        }
+    }
+
+
