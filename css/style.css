@@ -373,17 +373,20 @@ aside h1, article h1 {
   grid-template-columns: 1fr;
   grid-template-areas: "header" "main" "footer";
 }
-.body-noticias .posicionesN {
-  height: max-content;
-}
-.body-noticias .miniNoticiasN {
-  height: 50%;
-}
-.body-noticias .miniNoticiasN .logoLiga {
-  height: 10%;
+.body-noticias .mainNoticias {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+  grid-template-areas: "articulo";
+  padding: 40px;
+  margin-top: 5px;
 }
 .body-noticias .noticiasN {
   height: max-content;
+  grid-area: articulo;
+}
+.body-noticias .noticiasN h1 {
+  font-size: 2rem;
 }
 .body-noticias .noticiasN .contenedor-padre-noticias {
   display: flex;

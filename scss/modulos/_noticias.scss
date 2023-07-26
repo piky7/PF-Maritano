@@ -10,19 +10,26 @@
      "footer"
     ;
 
-   .posicionesN{
-    height: max-content;
-   }
 
-   .miniNoticiasN{
-    height:50%;
-    .logoLiga {
-            height: 10%;
-    }
-   }
+    
+  .mainNoticias{
+    display: grid ;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: "articulo";
+    padding: 40px;
+    margin-top: 5px;
+   
+  }
+
+
 
    .noticiasN{
         height: max-content;
+        grid-area: articulo;
+        h1{
+            font-size: 2rem;
+        }
         .contenedor-padre-noticias{
             display: flex;
             flex-direction: row;
