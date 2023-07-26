@@ -121,23 +121,22 @@ footer {
 }
 
 @media (max-width: 1023px) {
-  body .main2 {
+  .bodyEstadisticas .main2 {
     grid-area: main2;
     grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
     grid-template-columns: 1fr;
     grid-template-areas: "robos" "rebotes" "tapones" "puntosEquipo";
-    background-color: aqua;
   }
-  body .robos {
+  .bodyEstadisticas .robos {
     grid-area: robos;
   }
-  body .rebotes {
+  .bodyEstadisticas .rebotes {
     grid-area: rebotes;
   }
-  body .tapones {
+  .bodyEstadisticas .tapones {
     grid-area: tapones;
   }
-  body .puntosEquipo {
+  .bodyEstadisticas .puntosEquipo {
     grid-area: puntosEquipo;
   }
   main {
