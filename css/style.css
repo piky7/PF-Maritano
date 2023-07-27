@@ -345,43 +345,53 @@ aside h1, article h1 {
     font-size: 0.8rem;
   }
 }
-.mainContacto {
-  display: flex;
+.bodyContacto {
+  display: grid;
+  grid-template-rows: 0.1fr 1fr 0.05fr;
+  grid-template-columns: 1fr;
+  grid-template-areas: "header" "main" "footer";
+}
+.bodyContacto .mainContacto {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+  grid-template-areas: "articulo";
+  justify-items: center;
   align-items: center;
-  justify-content: center;
 }
-.mainContacto article {
-  width: 60%;
+.bodyContacto .mainContacto article {
+  width: 75%;
+  grid-area: articulo;
 }
-.mainContacto .formulario form {
+.bodyContacto .mainContacto .formulario form {
   grid-area: form;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 20px;
 }
-.mainContacto .formulario form div {
+.bodyContacto .mainContacto .formulario form div {
   padding: 5px;
 }
-.mainContacto .formulario form div input {
+.bodyContacto .mainContacto .formulario form div input {
   border: 3px solid rgba(224, 71, 0, 0.829);
 }
-.mainContacto .formulario form div input::placeholder {
+.bodyContacto .mainContacto .formulario form div input::placeholder {
   font-size: 0.9em;
   padding: 2px;
 }
-.mainContacto .formulario form div .btn {
+.bodyContacto .mainContacto .formulario form div .btn {
   background-color: black;
   color: white;
 }
-.mainContacto .formulario form div .btn:hover {
+.bodyContacto .mainContacto .formulario form div .btn:hover {
   background-color: rgba(224, 71, 0, 0.829);
   border: 3px solid black;
 }
-.mainContacto .formulario form div select {
+.bodyContacto .mainContacto .formulario form div select {
   border: 3px solid rgba(224, 71, 0, 0.829);
 }
-.mainContacto .formulario form div textarea {
+.bodyContacto .mainContacto .formulario form div textarea {
   height: 100px;
   border: 3px solid rgba(224, 71, 0, 0.829);
 }
