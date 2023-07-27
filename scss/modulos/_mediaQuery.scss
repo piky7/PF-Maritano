@@ -1,6 +1,5 @@
 @media (max-width:1023px) { // vista tablet y celular
 
-
     .bodyEstadisticas{
 
         .main2{ 
@@ -58,6 +57,8 @@
         
 
     }
+
+  
 
   
 
@@ -151,21 +152,5 @@ nav{
 }
 
 
-div.formulario{
-    width: 20rem;
-    form{
-        display: grid;
-        grid-template-columns: 1fr ;
-        grid-gap: 0;
-        margin: 1rem 0;
-    }
-    input{
-        width: 18rem;
-        height: 1.5rem;
-    }
-    .btn-contacto{
-        width: 18rem;
-        height: 4rem;
-    }
-}
+
 }

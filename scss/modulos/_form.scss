@@ -1,62 +1,48 @@
+.mainContacto{
 
-.formulario {
-	width: 60rem;
-    height: 25rem;
-    margin: 5rem auto;
-    border-radius: 1rem;
+	display: flex ;
+	align-items: center;
+	justify-content: center;
+    
 
-	form{
-		display: grid;
-		grid-template-columns: 1fr 1fr ;
-		grid-gap: 0.25rem;
-		margin: 2rem 0;
-		.content{
-			height: 5rem;
-		}
-	
-		input{
-			margin: 0 0.75rem;
-			appearance: none ;
-			border: none;
-			width: 15rem;
-			height: 2rem;
-			font-size: 1.25rem;
-			font-family: 'Times New Roman', Times, serif;
-			background-color: #f6f6f6;
-			border-bottom: 2px solid #4b556b;
-			transition: 0.3s ease;
-		}
-		input:hover{
-			font-size: 1.75rem;
-		}
-		input:focus-visible{
-			height: 1.75rem;
-			height: 3rem;
-			border: none;
-			background-color: #fff;
-		}
+   article{
+	width: 60%;
+   }
+
+	.formulario{
 		
-		
-		button{
-			appearance: none;
-			background: linear-gradient(to left, rgb(19, 87, 19), rgb(19, 128, 19), rgb(20, 184, 20) );
-			font-size: 1.5rem;
-			border: none;
-			width: 10rem;
-			height: 3rem;
-			margin: 0 1rem;
-			color: #f6f6f6;
-			transition: 0.3s ease;
-		}
-		button:hover{
-			border-radius: 0.5rem;
-			box-shadow: 4px 4px 10px #4b556b;
-		}
-		.reset{
-			background: linear-gradient(to right,rgb(89, 141, 236) 60%, rgb(173, 202, 255));
+		form{
+			grid-area: form;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			padding: 20px;
+			div{
+				padding: 5px;
+				
+
+				input{
+					border: 3px solid $colorNaranja;
+				}
+
+				.btn{
+					background-color: black;
+					color: white;
+
+					&:hover{
+						background-color: $colorNaranja;
+						border: 3px solid black;
+					}
+				}
+				select{
+					border: 3px solid $colorNaranja;
+				}
+
+				textarea{
+					height:100px;
+					border: 3px solid $colorNaranja;
+				}
+			}
 		}
 	}
-	
-
 }
-

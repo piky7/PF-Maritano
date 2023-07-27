@@ -206,23 +206,6 @@ footer {
     align-items: center;
     justify-content: center;
   }
-  div.formulario {
-    width: 20rem;
-  }
-  div.formulario form {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 0;
-    margin: 1rem 0;
-  }
-  div.formulario input {
-    width: 18rem;
-    height: 1.5rem;
-  }
-  div.formulario .btn-contacto {
-    width: 18rem;
-    height: 4rem;
-  }
 }
 aside table, main table {
   width: 95%;
@@ -362,59 +345,41 @@ aside h1, article h1 {
     font-size: 0.8rem;
   }
 }
-.formulario {
-  width: 60rem;
-  height: 25rem;
-  margin: 5rem auto;
-  border-radius: 1rem;
+.mainContacto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.formulario form {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 0.25rem;
-  margin: 2rem 0;
+.mainContacto article {
+  width: 60%;
 }
-.formulario form .content {
-  height: 5rem;
+.mainContacto .formulario form {
+  grid-area: form;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
 }
-.formulario form input {
-  margin: 0 0.75rem;
-  appearance: none;
-  border: none;
-  width: 15rem;
-  height: 2rem;
-  font-size: 1.25rem;
-  font-family: "Times New Roman", Times, serif;
-  background-color: #f6f6f6;
-  border-bottom: 2px solid #4b556b;
-  transition: 0.3s ease;
+.mainContacto .formulario form div {
+  padding: 5px;
 }
-.formulario form input:hover {
-  font-size: 1.75rem;
+.mainContacto .formulario form div input {
+  border: 3px solid rgba(224, 71, 0, 0.829);
 }
-.formulario form input:focus-visible {
-  height: 1.75rem;
-  height: 3rem;
-  border: none;
-  background-color: #fff;
+.mainContacto .formulario form div .btn {
+  background-color: black;
+  color: white;
 }
-.formulario form button {
-  appearance: none;
-  background: linear-gradient(to left, rgb(19, 87, 19), rgb(19, 128, 19), rgb(20, 184, 20));
-  font-size: 1.5rem;
-  border: none;
-  width: 10rem;
-  height: 3rem;
-  margin: 0 1rem;
-  color: #f6f6f6;
-  transition: 0.3s ease;
+.mainContacto .formulario form div .btn:hover {
+  background-color: rgba(224, 71, 0, 0.829);
+  border: 3px solid black;
 }
-.formulario form button:hover {
-  border-radius: 0.5rem;
-  box-shadow: 4px 4px 10px #4b556b;
+.mainContacto .formulario form div select {
+  border: 3px solid rgba(224, 71, 0, 0.829);
 }
-.formulario form .reset {
-  background: linear-gradient(to right, rgb(89, 141, 236) 60%, rgb(173, 202, 255));
+.mainContacto .formulario form div textarea {
+  height: 100px;
+  border: 3px solid rgba(224, 71, 0, 0.829);
 }
 
 .body-noticias {
