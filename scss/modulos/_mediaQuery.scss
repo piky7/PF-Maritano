@@ -1,7 +1,21 @@
 @media (max-width:1023px) { // vista tablet y celular
 
 
-
+      .bodyContacto{
+        row-gap: 0.2px;
+        .mainContacto{
+            article{
+                
+                form{
+                    div{
+                        textarea{
+                            width: 100px;
+                        }
+                    }
+                }
+            }
+        }
+      }
     
 
     .bodyEstadisticas{

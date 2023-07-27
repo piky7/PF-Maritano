@@ -118,6 +118,12 @@ footer {
 }
 
 @media (max-width: 1023px) {
+  .bodyContacto {
+    row-gap: 0.2px;
+  }
+  .bodyContacto .mainContacto article form div textarea {
+    width: 100px;
+  }
   .bodyEstadisticas .main2 {
     grid-area: main2;
     grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
@@ -362,7 +368,6 @@ aside h1, article h1 {
 .bodyContacto .mainContacto article {
   width: 250px;
   grid-area: articulo;
-  margin-bottom: 5px;
 }
 .bodyContacto .mainContacto .formulario form {
   grid-area: form;
