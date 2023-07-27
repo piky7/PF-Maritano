@@ -23,6 +23,11 @@
 
 				input{
 					border: 3px solid $colorNaranja;
+					&::placeholder {
+						font-size: 0.9em;
+						padding: 2px;
+						
+					  }
 				}
 
 				.btn{

@@ -366,6 +366,10 @@ aside h1, article h1 {
 .mainContacto .formulario form div input {
   border: 3px solid rgba(224, 71, 0, 0.829);
 }
+.mainContacto .formulario form div input::placeholder {
+  font-size: 0.9em;
+  padding: 2px;
+}
 .mainContacto .formulario form div .btn {
   background-color: black;
   color: white;
