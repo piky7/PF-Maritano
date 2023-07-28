@@ -10,16 +10,25 @@
         
         
         .tablaEquipos{    
-              
+            grid-area: tablaEquipos;
+            
                 .plantillaEquipos{
                     display: grid;
-                    grid-template-columns:1fr;
+                    grid-template-columns:0.7fr;
                     grid-template-rows: 1fr 1fr;
                     column-gap: 5px;
                     grid-template-areas: 
                     "infoEquipos"
                     "jugadores";
-                    background-color: aqua;
+                    justify-content: center;
+
+                    div{
+                        .escudo{
+                            margin-left: 5%;
+                        }
+                    }
+
+                   
                 }
             }   
                       
