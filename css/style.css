@@ -128,12 +128,13 @@ footer {
     grid-template-rows: 1fr;
     grid-template-areas: "tablaEquipos";
   }
-  .equipos-noticias .mainEquipos article .plantillaEquipos {
+  .equipos-noticias .mainEquipos .tablaEquipos .plantillaEquipos {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     column-gap: 5px;
     grid-template-areas: "infoEquipos" "jugadores";
+    background-color: aqua;
   }
   .bodyContacto {
     row-gap: 0.2px;

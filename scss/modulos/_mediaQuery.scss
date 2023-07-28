@@ -9,7 +9,7 @@
         grid-template-areas: "tablaEquipos";
         
         
-        article{    
+        .tablaEquipos{    
               
                 .plantillaEquipos{
                     display: grid;
@@ -19,7 +19,7 @@
                     grid-template-areas: 
                     "infoEquipos"
                     "jugadores";
-                              
+                    background-color: aqua;
                 }
             }   
                       
