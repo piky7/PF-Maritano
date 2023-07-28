@@ -371,7 +371,7 @@ aside h1, article h1 {
   font-size: 0.9rem;
 }
 .equipos-noticias .mainEquipos .tablaEquipos .plantillaEquipos .jugadores .dt {
-  background-color: rgba(224, 71, 0, 0.829);
+  background-color: rgba(12, 12, 141, 0.281);
 }
 
 @media (max-width: 1023px) {
