@@ -6,18 +6,19 @@ aside table, main table {
 	margin: 7px auto;
 	color: white;
 	img {
-		width: 30px;
-		height: 30px;
+		// width: 30px;
+		// height: 30px;
+		@include anchoAlto(30px,30px)
 	}
 	tr {
 		cursor: pointer;
 	}
     .par {
-        background-color: rgb(17, 17, 17);
+        background-color: $fondoDatoTablaOscuro;
     }
     .impar {
         background-color: darkgrey;
-        color: rgb(17, 17, 17);
+        color: $colorLetraDatoTablaOscuro;
     }
 }
 
@@ -37,8 +38,7 @@ aside table, main table {
 		
 		font-size: 1rem;
 		font-weight: bold;
-		padding-top: 7px;
-		padding-bottom: 7px;
+		@include paddingTopBtm(7px,7px);
 		font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	}
 }
@@ -90,14 +90,13 @@ aside table, main table {
 
 .lado1 table tr td, .lado3 table tr td {
 	font-size: 1rem;
-	padding-right: 3px;
-	padding-left: 3px;
+	@include paddingLat(3px,3px);
 	font-weight: bold;
 }
 
 figcaption {
-	background-color: #222;
-	color: #fff;
+	background-color: $fondoFigcaption;
+	color: $colorLetraFigcaption;
 	font: italic smaller sans-serif;
 	padding: 3px;
 	text-align: center;
@@ -115,11 +114,11 @@ figcaption {
 
 // Titulos tablas principal
 aside h1, article  h1 {
-	background-color: rgb(0, 0, 0);
-	font-size: 1.5rem;
-	border: 2px solid orangered;
+	background-color: $fondoTitulos;
+	font-size: $tamanoTitulos;
+	border: $bordeNaranja;
 	padding: 5px;
-	color: aliceblue;
+	color: $colorTitulos;
 	text-align: center;
 }
 
@@ -149,39 +148,15 @@ aside h1, article  h1 {
 
 .par td, .impar td {
 	text-align: start;
-	padding-top: 3px;
-	padding-bottom: 3px;
+	@include paddingTopBtm(3px,3px);
 }
 
 
 // Hover
 
 .par:hover, .impar:hover {
-	color: black;
-	background-color: coral;
+	color: $colorLetraDatoTablaOscuro;
+	background-color: $colorNaranja;
 	transform: scale(0.99);
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-
-	main{
-		
-			
-			.centrarTabla table tr th{
-				width: 33%;
-				height: max-content;
-				text-align: center;
-				font-size: 0.8rem;
-				
-			}
-			
-			.centrarTabla table tr td{
-				width: 33%;
-				height: max-content;
-				text-align: center;
-				font-size: 0.8rem;
-				
-			
-		}
-	}
-  }

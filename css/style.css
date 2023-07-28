@@ -8,7 +8,7 @@
   grid-area: main2;
   display: grid;
   grid-template-rows: 1fr;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
   grid-template-areas: "rebotes robos tapones puntosEquipo";
   column-gap: 15px;
   row-gap: 50px;
@@ -91,7 +91,7 @@ main figure {
 }
 main figure img {
   height: 190px;
-  border: 2px solid white;
+  border: 2px solid rgb(233, 224, 224);
 }
 main figure figcaption {
   height: 56px;
@@ -102,19 +102,20 @@ main figure figcaption {
 
 footer {
   display: flex;
-  justify-content: center;
+  align-items: end;
+  justify-content: space-around;
 }
 
 .redes {
   background-color: rgba(224, 71, 0, 0.829);
   flex-basis: 70%;
   display: flex;
-  justify-content: space-around;
   align-items: center;
+  justify-content: space-around;
 }
 .redes a img {
-  height: 30px;
-  width: 30px;
+  height: 25px;
+  width: 25px;
 }
 
 @media (max-width: 1023px) {
@@ -126,7 +127,7 @@ footer {
   }
   .bodyEstadisticas .main2 {
     grid-area: main2;
-    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
+    grid-template-rows: repeat(4, 0.5fr);
     grid-template-columns: 1fr;
     grid-template-areas: "robos" "rebotes" "tapones" "puntosEquipo";
   }
@@ -146,7 +147,7 @@ footer {
     grid-area: main;
     display: grid;
     height: auto;
-    grid-template-rows: 0.5fr 0.5fr 0.5fr;
+    grid-template-rows: repeat(3, 0.5fr);
     grid-template-columns: 1fr;
     grid-template-areas: "lado2" "lado1" "lado3";
     column-gap: 15px;
@@ -204,13 +205,21 @@ footer {
     padding-right: 5px;
   }
   .galeria figure img {
-    border: 2px solid rgb(32, 20, 20);
+    border: 2px solid rgb(233, 224, 224);
   }
   .galeria figure figcaption {
     height: 55px;
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  main .centrarTabla table tr th, main .centrarTabla table tr td {
+    width: 33%;
+    height: max-content;
+    text-align: center;
+    font-size: 0.8rem;
   }
 }
 aside table, main table {
@@ -278,8 +287,8 @@ aside table .impar, main table .impar {
 
 .lado1 table tr td, .lado3 table tr td {
   font-size: 1rem;
-  padding-right: 3px;
   padding-left: 3px;
+  padding-right: 3px;
   font-weight: bold;
 }
 
@@ -304,7 +313,7 @@ aside h1, article h1 {
   font-size: 1.5rem;
   border: 2px solid orangered;
   padding: 5px;
-  color: aliceblue;
+  color: rgb(238, 247, 255);
   text-align: center;
 }
 
@@ -332,25 +341,11 @@ aside h1, article h1 {
 }
 
 .par:hover, .impar:hover {
-  color: black;
-  background-color: coral;
+  color: rgb(17, 17, 17);
+  background-color: rgba(224, 71, 0, 0.829);
   transform: scale(0.99);
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-  main .centrarTabla table tr th {
-    width: 33%;
-    height: max-content;
-    text-align: center;
-    font-size: 0.8rem;
-  }
-  main .centrarTabla table tr td {
-    width: 33%;
-    height: max-content;
-    text-align: center;
-    font-size: 0.8rem;
-  }
-}
 .bodyContacto {
   display: grid;
   grid-template-rows: 0.1fr 1fr 0.05fr;
@@ -380,7 +375,7 @@ aside h1, article h1 {
   padding: 5px;
 }
 .bodyContacto .mainContacto .formulario form div input {
-  border: 3px solid rgba(224, 71, 0, 0.829);
+  border: 2px solid orangered;
 }
 .bodyContacto .mainContacto .formulario form div input::placeholder {
   font-size: 0.9em;
@@ -392,14 +387,14 @@ aside h1, article h1 {
 }
 .bodyContacto .mainContacto .formulario form div .btn:hover {
   background-color: rgba(224, 71, 0, 0.829);
-  border: 3px solid black;
+  border: 2px solid black;
 }
 .bodyContacto .mainContacto .formulario form div select {
-  border: 3px solid rgba(224, 71, 0, 0.829);
+  border: 2px solid orangered;
 }
 .bodyContacto .mainContacto .formulario form div textarea {
   height: 100px;
-  border: 3px solid rgba(224, 71, 0, 0.829);
+  border: 2px solid orangered;
 }
 
 .body-noticias {

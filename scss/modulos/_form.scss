@@ -4,7 +4,8 @@
 	display: grid;
 	grid-template-rows: 0.1fr 1fr 0.05fr;
 	grid-template-columns: 1fr;
-	grid-template-areas: "header"
+	grid-template-areas: 
+	"header"
      "main"
      "footer";
 
@@ -38,7 +39,7 @@
 					
 	
 					input{
-						border: 3px solid $colorNaranja;
+						border: $bordeNaranja;
 						&::placeholder {
 							font-size: 0.9em;
 							padding: 2px;
@@ -52,16 +53,16 @@
 	
 						&:hover{
 							background-color: $colorNaranja;
-							border: 3px solid black;
+							border: $bordeTablas;
 						}
 					}
 					select{
-						border: 3px solid $colorNaranja;
+						border: $bordeNaranja;
 					}
 	
 					textarea{
 						height:100px;
-						border: 3px solid $colorNaranja;
+						border: $bordeNaranja;
 					}
 				}
 			}

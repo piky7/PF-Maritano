@@ -7,25 +7,21 @@ main {
 	grid-template-areas: "lado1 lado2 lado3"
     ;
 	column-gap: 15px;
-	margin-left: 8px;
-	margin-right: 8px;
+	@include marginLat(8px,8px);
+
 	a{
 		text-decoration: none;
 	}
 
 	figure{
-		padding-left: 5px;
-		padding-right: 5px;
-		
+		@include paddingLat(5px,5px);
 		img{
 			height: 190px;
-			border: 2px solid white;
+			border: $bordeImgGaleria;
 		}
 		figcaption{
 			height: 56px;
-			display: flex;
-			align-items: center;
-			justify-content: center;
+			@include flexAlineacion(flex,center,center);
 		}
 	}
 }

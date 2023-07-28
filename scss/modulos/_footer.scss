@@ -1,15 +1,12 @@
 footer {
-	display: flex;
-	justify-content: center;
+	@include flexAlineacion (flex,end,space-around)
 }
 .redes {
 	background-color: $colorNaranja;
 	flex-basis: 70%;
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
+	@include flexAlineacion (flex,center,space-around);
 	a img {
-		height: 30px;
-		width: 30px;
+		height: 25px;
+		width: 25px;
 	}
 }

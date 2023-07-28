@@ -16,14 +16,13 @@
     
     
 	 grid-template-rows: 1fr;
-	 grid-template-columns: 1fr 1fr 1fr 1fr;
+	 grid-template-columns: repeat(4,1fr);
 	grid-template-areas: 
     "rebotes robos tapones puntosEquipo"
     ;
 	column-gap: 15px;
     row-gap: 50px;
-	margin-left: 8px;
-	margin-right: 8px;
+    @include marginLat(8px,8px);
    
 }
 
