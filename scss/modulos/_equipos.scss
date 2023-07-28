@@ -1,0 +1,58 @@
+
+.equipos-noticias{
+
+    height: 100vh;
+    display: grid;
+	grid-template-rows: 0.1fr 1fr 0.05fr;
+	grid-template-columns: 1fr;
+	grid-template-areas: "header"
+     "main"
+     "footer"
+    ;
+   
+
+  .mainEquipos{
+  
+      .tablaEquipos{    
+        .plantillaEquipos{
+            
+            display: grid;
+            grid-template-columns: 0.7fr 1fr;
+            grid-template-rows: 1fr;
+            column-gap: 5px;
+            grid-template-areas: "infoEquipos jugadores";
+            
+            .escudo{
+                @include anchoAlto(200px,200px)
+              }
+
+
+            .infoEquipos{
+                grid-area: infoEquipos;
+                
+            }
+
+            .jugadores{
+                grid-area: jugadores;
+
+                th{
+                    font-size: 1rem;
+                }
+
+                td{
+                    text-align: start;
+                    padding: 5px;
+                    font-size: 0.9rem;
+                    
+                }
+
+                .dt{
+                    background-color: $colorNaranja;
+                }
+            }
+        }
+      }
+
+  }  
+
+}

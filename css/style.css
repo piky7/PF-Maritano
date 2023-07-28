@@ -119,6 +119,22 @@ footer {
 }
 
 @media (max-width: 1023px) {
+  .equipos-noticias {
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  .equipos-noticias .mainEquipos {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "tablaEquipos";
+  }
+  .equipos-noticias .mainEquipos article .plantillaEquipos {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 5px;
+    grid-template-areas: "infoEquipos" "jugadores";
+  }
   .bodyContacto {
     row-gap: 0.2px;
   }
@@ -440,6 +456,42 @@ aside h1, article h1 {
 }
 .body-noticias .noticiasN .contenedor-padre-noticias .carta-contenedor .card:hover {
   transform: scale(1.03);
+}
+
+.equipos-noticias {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 0.1fr 1fr 0.05fr;
+  grid-template-columns: 1fr;
+  grid-template-areas: "header" "main" "footer";
+}
+.equipos-noticias .mainEquipos .tablaEquipos .plantillaEquipos {
+  display: grid;
+  grid-template-columns: 0.7fr 1fr;
+  grid-template-rows: 1fr;
+  column-gap: 5px;
+  grid-template-areas: "infoEquipos jugadores";
+}
+.equipos-noticias .mainEquipos .tablaEquipos .plantillaEquipos .escudo {
+  width: 200px;
+  height: 200px;
+}
+.equipos-noticias .mainEquipos .tablaEquipos .plantillaEquipos .infoEquipos {
+  grid-area: infoEquipos;
+}
+.equipos-noticias .mainEquipos .tablaEquipos .plantillaEquipos .jugadores {
+  grid-area: jugadores;
+}
+.equipos-noticias .mainEquipos .tablaEquipos .plantillaEquipos .jugadores th {
+  font-size: 1rem;
+}
+.equipos-noticias .mainEquipos .tablaEquipos .plantillaEquipos .jugadores td {
+  text-align: start;
+  padding: 5px;
+  font-size: 0.9rem;
+}
+.equipos-noticias .mainEquipos .tablaEquipos .plantillaEquipos .jugadores .dt {
+  background-color: rgba(224, 71, 0, 0.829);
 }
 
 /*# sourceMappingURL=style.css.map */
