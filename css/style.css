@@ -361,6 +361,7 @@ aside h1, article h1 {
 }
 .equipos-noticias .mainEquipos .tablaEquipos .plantillaEquipos .infoEquipos {
   grid-area: infoEquipos;
+  height: max-content;
 }
 .equipos-noticias .mainEquipos .tablaEquipos .plantillaEquipos .jugadores {
   grid-area: jugadores;
@@ -392,14 +393,17 @@ aside h1, article h1 {
   }
   .equipos-noticias .mainEquipos .tablaEquipos .plantillaEquipos {
     display: grid;
-    grid-template-columns: 0.7fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 0.8fr;
+    grid-template-rows: 0.7fr 1fr;
     column-gap: 5px;
     grid-template-areas: "infoEquipos" "jugadores";
     justify-content: center;
   }
+  .equipos-noticias .mainEquipos .tablaEquipos .plantillaEquipos div {
+    height: max-content;
+  }
   .equipos-noticias .mainEquipos .tablaEquipos .plantillaEquipos div .escudo {
-    margin-left: 5%;
+    margin-left: 30px;
   }
   .bodyContacto {
     row-gap: 0.2px;
