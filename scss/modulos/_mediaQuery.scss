@@ -24,12 +24,20 @@
                     "jugadores";
                     justify-content: center;
                     
+                     .infoEquipo{
+                        div{
+                     
+                            display: flex;
+                           
+                            justify-content: center;
 
+                        }
+                     }
                     div{
                         
                         height: max-content;
                         .escudo{
-                            margin-left: 30px;
+                            text-align: center;
                         }
                     }
 
