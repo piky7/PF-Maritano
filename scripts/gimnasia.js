@@ -17,7 +17,7 @@ function cargarJugadores (listaJugadores) {
 
         
       
-        if( jugadoresArgentino.indexOf(jug) % 2 === 0){
+        if( jugadoresGimnasia.indexOf(jug) % 2 === 0){
           infoJugador.className = 'impar'
         } else {
           infoJugador.className = 'par'
@@ -38,25 +38,18 @@ function cargarJugadores (listaJugadores) {
         tablaContenedor.append(infoJugador)
       })
 }
+let jugadoresGimnasia = []
 
+let toretta = new Jugador('Emiliano Toretta (U23)','B','1,84',21)
+let webster = new Jugador('Joshua Webster (E)','B','1,90',26)
+let mariani = new Jugador('Guido Mariani','ES','1,98',28)
+let gramajo = new Jugador('Iván Gramajo','AL','1,93',27)
+let stucky = new Jugador('Emilio Stucky','AP','1,98',29)
+let deVaughn = new Jugador('Gerard De Vaughn (E)','AP','2,03',33)
+let podesta = new Jugador('Fernando Podestá','P','2,05',31)
+let nazione = new Jugador('Brandon Nazione','P','2,03',29)
+let villagran = new Jugador('Martín Villagrán','DT','',41)
 
+jugadoresGimnasia.push(toretta,webster,mariani,gramajo,stucky,deVaughn,podesta,nazione,villagran)
 
-// -- Argentino de Junin
-
-let jugadoresArgentino = []
-
-let alliende = new Jugador('Guillermo Aliende' , 'B' , '1,78' , 26)
-let slider = new Jugador('Jonathan Slider' , 'ES' , '1,92' , 36)
-let cangelosi = new Jugador('Juan Cangelosi', 'AL', '1,95' , 42)
-let gimenez = new Jugador('Nicolás Giménez','AL', '2,02', 29)
-let faccelo = new Jugador('Agustín Facello', 'B', '1,83', 23)
-let payton = new Jugador('Manny Payton (E)', 'ES', '1,83',26)
-let romegialli = new Jugador('Santino Romegialli (U23)' , 'P' , '2,04' , 20 )
-let huarte = new Jugador('Matias Huarte','DT','',42)
-
-jugadoresArgentino.push(alliende,faccelo,slider,payton,cangelosi,gimenez,romegialli,huarte)
-
-// Carga de equipos
-cargarJugadores(jugadoresArgentino)
-
-
+cargarJugadores(jugadoresGimnasia)

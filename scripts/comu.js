@@ -16,9 +16,13 @@ function cargarJugadores (listaJugadores) {
         let infoJugador = document.createElement('tr')
       
         if( listaJugadores.indexOf(jug) % 2 === 0){
-          infoJugador.className = 'par'
-        } else {
           infoJugador.className = 'impar'
+        } else {
+          infoJugador.className = 'par'
+        }
+
+        if(jug.posicion === 'DT'){
+          infoJugador.className = 'impar dt'
         }
       
         infoJugador.innerHTML = `
@@ -41,8 +45,9 @@ let giorgi = new Jugador('Facundo Giorgi','AL','2,05',37)
 let maxwell = new Jugador('Evan Maxwell (E)','P','2,08',28)
 let strings = new Jugador('Justin Strings','P','2,01',26)
 let mThomas = new Jugador('Marcus Thomas (E)','ES','1,90',28)
+let nardini = new Jugador('Juan Manuel Nardini','DT','',36)
 
 
-jugadoresComu.push(deshields,zenclussen,montes,mThomas,assum,giorgi,maxwell,strings)
+jugadoresComu.push(deshields,zenclussen,montes,mThomas,assum,giorgi,maxwell,strings,nardini)
 
 cargarJugadores(jugadoresComu)

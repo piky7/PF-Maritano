@@ -16,9 +16,13 @@ function cargarJugadores (listaJugadores) {
         let infoJugador = document.createElement('tr')
       
         if( listaJugadores.indexOf(jug) % 2 === 0){
-          infoJugador.className = 'par'
-        } else {
           infoJugador.className = 'impar'
+        } else {
+          infoJugador.className = 'par'
+        }
+
+        if(jug.posicion === 'DT'){
+          infoJugador.className = 'impar dt'
         }
       
         infoJugador.innerHTML = `
@@ -43,7 +47,8 @@ let mare = new Jugador('Lautaro Mare','AP','1,97',25)
 let fierro = new Jugador('Mariano Fierro','AP','2,00',37)
 let luchi = new Jugador('Marco Luchi','P','1,98',30)
 let tintorelli = new Jugador('Damian Tintorelli','P','2,05',41)
+let fFernandez = new Jugador('Federico Fernández','DT','',38)
 
-jugadoresFerro.push(lezcano,spano,borsellino,fRodriguez,bettiga,buemo,mare,fierro,luchi,tintorelli)
+jugadoresFerro.push(lezcano,spano,borsellino,fRodriguez,bettiga,buemo,mare,fierro,luchi,tintorelli,fFernandez)
 
 cargarJugadores(jugadoresFerro)

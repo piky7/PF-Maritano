@@ -19,9 +19,13 @@ function cargarJugadores (listaJugadores) {
         let infoJugador = document.createElement('tr')
       
         if( listaJugadores.indexOf(jug) % 2 === 0){
-          infoJugador.className = 'par'
-        } else {
           infoJugador.className = 'impar'
+        } else {
+          infoJugador.className = 'par'
+        }
+
+        if(jug.posicion === 'DT'){
+          infoJugador.className = 'impar dt'
         }
       
         infoJugador.innerHTML = `
@@ -44,7 +48,8 @@ let mata = new Jugador('Marcos Mata','AL','2,01',36)
 let mRodriguez = new Jugador('Manuel Rodríguez (U23)','AL','2,03',21)
 let vega = new Jugador('Sebastián Vega','AL','2,00',35)
 let mainoldi = new Jugador('Leonardo Mainoldi','AP','2,04',38)
+let duro = new Jugador('Carlos Duró','DT','',52)
 
-jugadoresBoca.push(jVildoza,defelippo,guerrero,schattmann,mata,mRodriguez,vega,mainoldi)
+jugadoresBoca.push(jVildoza,defelippo,guerrero,schattmann,mata,mRodriguez,vega,mainoldi,duro)
 
 cargarJugadores(jugadoresBoca)
