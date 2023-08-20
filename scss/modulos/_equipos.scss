@@ -1,7 +1,7 @@
 
 .equipos-noticias{
-
-    height: 100vh;
+    
+    height: max-content;
     display: grid;
 	grid-template-rows: 0.1fr 1fr 0.05fr;
 	grid-template-columns: 1fr;
@@ -10,7 +10,7 @@
      "footer"
     ;
   .mainEquipos{
-  
+     height: max-content;
       .tablaEquipos{    
 
         height: max-content;
