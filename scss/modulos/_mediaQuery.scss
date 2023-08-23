@@ -2,6 +2,7 @@
 
 .equipos-noticias{
     grid-template-rows: 1fr 1fr 1fr;
+    height: 100vh;
     .mainEquipos{
         display: grid;
         grid-template-columns: 1fr;
