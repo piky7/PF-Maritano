@@ -23,13 +23,18 @@
 	column-gap: 15px;
     row-gap: 50px;
     @include marginLat(8px,8px);
-   
+    
+    aside{
+        height: max-content;
+    }
+  
 }
 
    
 
         .rebotes{
             grid-area: rebotes;
+            
         }
         .robos{
             grid-area: robos;

@@ -33,6 +33,9 @@ body {
   margin-left: 8px;
   margin-right: 8px;
 }
+.bodyEstadisticas .main2 aside {
+  height: max-content;
+}
 .bodyEstadisticas .rebotes {
   grid-area: rebotes;
 }
@@ -350,6 +353,9 @@ aside h1, article h1 {
 }
 .equipos-noticias .mainEquipos .tablaEquipos {
   height: max-content;
+}
+.equipos-noticias .mainEquipos .tablaEquipos h1 {
+  font-size: 2.25rem;
 }
 .equipos-noticias .mainEquipos .tablaEquipos .plantillaEquipos {
   display: grid;

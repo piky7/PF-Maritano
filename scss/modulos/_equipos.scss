@@ -12,7 +12,9 @@
   .mainEquipos{
      height: max-content;
       .tablaEquipos{    
-
+            h1{
+                font-size: $tamanoTitulos*1.5;
+            }
         height: max-content;
         .plantillaEquipos{
             
