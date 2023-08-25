@@ -52,9 +52,10 @@ let gimenez = new Jugador('Nicolás Giménez','AL', '2,02', 29)
 let faccelo = new Jugador('Agustín Facello', 'B', '1,83', 23)
 let payton = new Jugador('Manny Payton (E)', 'ES', '1,83',26)
 let romegialli = new Jugador('Santino Romegialli (U23)' , 'P' , '2,04' , 20 )
+let alloatti = new Jugador('Alejandro Aloatti','P','2,04',38)
 let huarte = new Jugador('Matias Huarte','DT','',42)
 
-jugadoresArgentino.push(alliende,faccelo,slider,payton,cangelosi,gimenez,romegialli,huarte)
+jugadoresArgentino.push(alliende,faccelo,slider,payton,cangelosi,gimenez,romegialli,alloatti,huarte)
 
 // Carga de equipos
 cargarJugadores(jugadoresArgentino)

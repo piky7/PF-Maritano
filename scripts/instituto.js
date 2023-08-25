@@ -44,8 +44,9 @@ let cosolito = new Jugador('Mauro Cosolito','AL','1,95',34)
 let lugarini = new Jugador('Bautista Lugarini (U23)','AL','2,03',22)
 let jefferson = new Jugador('Bryan Jefferson (E)','AP','2,01',29)
 let saiz = new Jugador('Javier Saiz','P','2,06',29)
+let acunia = new Jugador('Ricardo Acuña','P','2,06',32)
 let victoriano = new Jugador('Lucas Victoriano','DT','',45)
 
-jugadoresInstituto.push(lVildoza,pomoli,elias,cosolito,lugarini,jefferson,saiz,victoriano)
+jugadoresInstituto.push(lVildoza,pomoli,elias,cosolito,lugarini,jefferson,saiz,acunia,victoriano)
 
 cargarJugadores(jugadoresInstituto)
