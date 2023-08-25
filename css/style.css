@@ -71,7 +71,7 @@ nav ul li a:hover {
   transform: scale(1.1);
 }
 
-main {
+.mainPrincipal {
   grid-area: main;
   display: grid;
   height: 70vh;
@@ -82,18 +82,18 @@ main {
   margin-left: 8px;
   margin-right: 8px;
 }
-main a {
+.mainPrincipal a {
   text-decoration: none;
 }
-main figure {
+.mainPrincipal figure {
   padding-left: 5px;
   padding-right: 5px;
 }
-main figure img {
+.mainPrincipal figure img {
   height: 190px;
   border: 2px solid rgb(233, 224, 224);
 }
-main figure figcaption {
+.mainPrincipal figure figcaption {
   height: 56px;
   display: flex;
   align-items: center;
