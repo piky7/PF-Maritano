@@ -443,7 +443,7 @@ aside h1, article h1 {
   .bodyEstadisticas .puntosEquipo {
     grid-area: puntosEquipo;
   }
-  main {
+  .mainPrincipal {
     grid-area: main;
     display: grid;
     height: auto;
@@ -455,7 +455,7 @@ aside h1, article h1 {
     margin-left: 15px;
     margin-right: 15px;
   }
-  main .asistencias table tr td, main .posiciones table tr td {
+  .mainPrincipal .asistencias table tr td, .mainPrincipal .posiciones table tr td {
     text-align: start;
   }
   nav ul li a:hover {
